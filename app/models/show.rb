@@ -2,5 +2,7 @@ class Show < ActiveRecord::Base
   has_many :characters
   has_many :actors, through: :characters
   belongs_to :network
-  self.genre = genre
+  def genre=(genre)
+    self.genre = genre 
+  end
 end
