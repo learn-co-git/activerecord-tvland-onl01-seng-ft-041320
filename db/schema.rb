@@ -19,9 +19,6 @@ ActiveRecord::Schema.define(version: 9) do
 
   create_table "shows", force: :cascade do |t|
     t.string  "name"
-    t.integer "network_id"
-    t.string  "day"
-    t.string  "season"
     t.string  "genre"
   end
 
