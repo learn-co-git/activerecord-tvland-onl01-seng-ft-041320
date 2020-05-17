@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 9) do
 
   create_table "shows", force: :cascade do |t|
     t.string  "name"
+    t.string  "day"
     t.string  "genre"
   end
 
